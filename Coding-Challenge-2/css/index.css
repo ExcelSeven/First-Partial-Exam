@@ -2,3 +2,89 @@ div{
   border: 1px solid black;
   padding: 5px;
 }
+
+.navigation{
+	display: flex;
+	flex-direction: column;
+}
+
+.heading{
+	display: none;
+}
+
+.content{
+	display: none;
+}
+
+.nav-box{
+	text-align: center;
+	margin: 2% 2%;
+}
+
+@media (min-width: 600px) and (max-width: 990px){
+	.navigation{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.nav-box{
+		margin: 1% auto;
+		padding: 2px 15px;
+	}
+
+	.heading{
+		display: none;
+	}
+
+	.content{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.side{
+		width: 100%;
+	}
+
+	.side-box{
+		text-align: center;
+	}
+}
+
+@media (min-width: 991px){
+	.navigation{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.nav-box{
+		margin: auto;
+		padding: 5px 5px;
+		width: 17%;
+		text-align: center;
+	}
+
+	.heading{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.heading-box{
+		margin: auto;
+		padding: 5px 5px;
+		width: 30%;
+		text-align: center;
+	}
+
+	.content{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.side{
+		width: 100%;
+	}
+
+	.side-box{
+		text-align: center;
+	}
+}
